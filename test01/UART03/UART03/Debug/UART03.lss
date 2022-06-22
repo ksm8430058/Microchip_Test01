@@ -1,0 +1,294 @@
+
+UART03.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000036  00800100  00000162  000001d6  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         00000162  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .comment      00000030  00000000  00000000  0000020c  2**0
+                  CONTENTS, READONLY
+  3 .note.gnu.avr.deviceinfo 00000040  00000000  00000000  0000023c  2**2
+                  CONTENTS, READONLY
+  4 .debug_aranges 00000030  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   000008d2  00000000  00000000  000002ac  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000007f5  00000000  00000000  00000b7e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   000002b5  00000000  00000000  00001373  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000054  00000000  00000000  00001628  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    000003c3  00000000  00000000  0000167c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000009e  00000000  00000000  00001a3f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000020  00000000  00000000  00001add  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	45 c0       	rjmp	.+138    	; 0x8c <__ctors_end>
+   2:	00 00       	nop
+   4:	58 c0       	rjmp	.+176    	; 0xb6 <__bad_interrupt>
+   6:	00 00       	nop
+   8:	56 c0       	rjmp	.+172    	; 0xb6 <__bad_interrupt>
+   a:	00 00       	nop
+   c:	54 c0       	rjmp	.+168    	; 0xb6 <__bad_interrupt>
+   e:	00 00       	nop
+  10:	52 c0       	rjmp	.+164    	; 0xb6 <__bad_interrupt>
+  12:	00 00       	nop
+  14:	50 c0       	rjmp	.+160    	; 0xb6 <__bad_interrupt>
+  16:	00 00       	nop
+  18:	4e c0       	rjmp	.+156    	; 0xb6 <__bad_interrupt>
+  1a:	00 00       	nop
+  1c:	4c c0       	rjmp	.+152    	; 0xb6 <__bad_interrupt>
+  1e:	00 00       	nop
+  20:	4a c0       	rjmp	.+148    	; 0xb6 <__bad_interrupt>
+  22:	00 00       	nop
+  24:	48 c0       	rjmp	.+144    	; 0xb6 <__bad_interrupt>
+  26:	00 00       	nop
+  28:	46 c0       	rjmp	.+140    	; 0xb6 <__bad_interrupt>
+  2a:	00 00       	nop
+  2c:	44 c0       	rjmp	.+136    	; 0xb6 <__bad_interrupt>
+  2e:	00 00       	nop
+  30:	42 c0       	rjmp	.+132    	; 0xb6 <__bad_interrupt>
+  32:	00 00       	nop
+  34:	40 c0       	rjmp	.+128    	; 0xb6 <__bad_interrupt>
+  36:	00 00       	nop
+  38:	3e c0       	rjmp	.+124    	; 0xb6 <__bad_interrupt>
+  3a:	00 00       	nop
+  3c:	3c c0       	rjmp	.+120    	; 0xb6 <__bad_interrupt>
+  3e:	00 00       	nop
+  40:	3a c0       	rjmp	.+116    	; 0xb6 <__bad_interrupt>
+  42:	00 00       	nop
+  44:	38 c0       	rjmp	.+112    	; 0xb6 <__bad_interrupt>
+  46:	00 00       	nop
+  48:	36 c0       	rjmp	.+108    	; 0xb6 <__bad_interrupt>
+  4a:	00 00       	nop
+  4c:	34 c0       	rjmp	.+104    	; 0xb6 <__bad_interrupt>
+  4e:	00 00       	nop
+  50:	32 c0       	rjmp	.+100    	; 0xb6 <__bad_interrupt>
+  52:	00 00       	nop
+  54:	30 c0       	rjmp	.+96     	; 0xb6 <__bad_interrupt>
+  56:	00 00       	nop
+  58:	2e c0       	rjmp	.+92     	; 0xb6 <__bad_interrupt>
+  5a:	00 00       	nop
+  5c:	2c c0       	rjmp	.+88     	; 0xb6 <__bad_interrupt>
+  5e:	00 00       	nop
+  60:	2a c0       	rjmp	.+84     	; 0xb6 <__bad_interrupt>
+  62:	00 00       	nop
+  64:	28 c0       	rjmp	.+80     	; 0xb6 <__bad_interrupt>
+  66:	00 00       	nop
+  68:	26 c0       	rjmp	.+76     	; 0xb6 <__bad_interrupt>
+  6a:	00 00       	nop
+  6c:	24 c0       	rjmp	.+72     	; 0xb6 <__bad_interrupt>
+  6e:	00 00       	nop
+  70:	22 c0       	rjmp	.+68     	; 0xb6 <__bad_interrupt>
+  72:	00 00       	nop
+  74:	20 c0       	rjmp	.+64     	; 0xb6 <__bad_interrupt>
+  76:	00 00       	nop
+  78:	1e c0       	rjmp	.+60     	; 0xb6 <__bad_interrupt>
+  7a:	00 00       	nop
+  7c:	1c c0       	rjmp	.+56     	; 0xb6 <__bad_interrupt>
+  7e:	00 00       	nop
+  80:	1a c0       	rjmp	.+52     	; 0xb6 <__bad_interrupt>
+  82:	00 00       	nop
+  84:	18 c0       	rjmp	.+48     	; 0xb6 <__bad_interrupt>
+  86:	00 00       	nop
+  88:	16 c0       	rjmp	.+44     	; 0xb6 <__bad_interrupt>
+	...
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	e2 e6       	ldi	r30, 0x62	; 98
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a6 33       	cpi	r26, 0x36	; 54
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+  b2:	10 d0       	rcall	.+32     	; 0xd4 <main>
+  b4:	54 c0       	rjmp	.+168    	; 0x15e <_exit>
+
+000000b6 <__bad_interrupt>:
+  b6:	a4 cf       	rjmp	.-184    	; 0x0 <__vectors>
+
+000000b8 <putct>:
+#define F_CPU 7372800UL
+#include <avr/io.h>
+
+void putct(unsigned char data)
+{
+	while((UCSR0A & 0x20) == 0);			//전송대기
+  b8:	5d 9b       	sbis	0x0b, 5	; 11
+  ba:	fe cf       	rjmp	.-4      	; 0xb8 <putct>
+	UDR0 = data;							//데이터 전송
+  bc:	8c b9       	out	0x0c, r24	; 12
+	UCSR0A |=0x20;							// UCSR0A 레지스터 중에서 5번째 비트(UDREn) 를 세트하여 UDRE0를 클리어 함. */ 0010 0000
+  be:	8b b1       	in	r24, 0x0b	; 11
+  c0:	80 62       	ori	r24, 0x20	; 32
+  c2:	8b b9       	out	0x0b, r24	; 11
+  c4:	08 95       	ret
+
+000000c6 <getch>:
+}
+unsigned char getch()
+{
+	unsigned char data;
+	while((UCSR0A &0x80) == 0);				// 송신 대기
+  c6:	5f 9b       	sbis	0x0b, 7	; 11
+  c8:	fe cf       	rjmp	.-4      	; 0xc6 <getch>
+	data = UDR0;							// 송신된 데이터 저장
+  ca:	8c b1       	in	r24, 0x0c	; 12
+	UCSR0A |= 0x80;							// 7번째 비트 세트 
+  cc:	9b b1       	in	r25, 0x0b	; 11
+  ce:	90 68       	ori	r25, 0x80	; 128
+  d0:	9b b9       	out	0x0b, r25	; 11
+	return data;							//데이터 반환
+}
+  d2:	08 95       	ret
+
+000000d4 <main>:
+
+int main(void)
+{
+  d4:	cf 93       	push	r28
+  d6:	df 93       	push	r29
+  d8:	cd b7       	in	r28, 0x3d	; 61
+  da:	de b7       	in	r29, 0x3e	; 62
+  dc:	e5 97       	sbiw	r28, 0x35	; 53
+  de:	0f b6       	in	r0, 0x3f	; 63
+  e0:	f8 94       	cli
+  e2:	de bf       	out	0x3e, r29	; 62
+  e4:	0f be       	out	0x3f, r0	; 63
+  e6:	cd bf       	out	0x3d, r28	; 61
+    unsigned char text[] = 
+  e8:	8d e2       	ldi	r24, 0x2D	; 45
+  ea:	e0 e0       	ldi	r30, 0x00	; 0
+  ec:	f1 e0       	ldi	r31, 0x01	; 1
+  ee:	de 01       	movw	r26, r28
+  f0:	11 96       	adiw	r26, 0x01	; 1
+  f2:	01 90       	ld	r0, Z+
+  f4:	0d 92       	st	X+, r0
+  f6:	8a 95       	dec	r24
+  f8:	e1 f7       	brne	.-8      	; 0xf2 <main+0x1e>
+			"\r\nWelcom! edgeiLAB\r\n USART 0 Test Program.\r\r";
+	unsigned char echo[] = "ECHO >>";
+  fa:	88 e0       	ldi	r24, 0x08	; 8
+  fc:	ed e2       	ldi	r30, 0x2D	; 45
+  fe:	f1 e0       	ldi	r31, 0x01	; 1
+ 100:	de 01       	movw	r26, r28
+ 102:	9e 96       	adiw	r26, 0x2e	; 46
+ 104:	01 90       	ld	r0, Z+
+ 106:	0d 92       	st	X+, r0
+ 108:	8a 95       	dec	r24
+ 10a:	e1 f7       	brne	.-8      	; 0x104 <main+0x30>
+	unsigned char i = 0;
+	
+	DDRE = 0xfe;			//E포트 사용, Rx(입력0), Tx(출력 1)
+ 10c:	8e ef       	ldi	r24, 0xFE	; 254
+ 10e:	82 b9       	out	0x02, r24	; 2
+
+	UCSR0A = 0x00;
+ 110:	1b b8       	out	0x0b, r1	; 11
+	UCSR0B = 0x18;		// Rx, Tx enable
+ 112:	88 e1       	ldi	r24, 0x18	; 24
+ 114:	8a b9       	out	0x0a, r24	; 10
+	UCSR0C = 0x06;		// 비동기 방식, No Parity bit, 1 Stop bit
+ 116:	86 e0       	ldi	r24, 0x06	; 6
+ 118:	80 93 95 00 	sts	0x0095, r24	; 0x800095 <__TEXT_REGION_LENGTH__+0x7e0095>
+	UBRR0H = 0x00;
+ 11c:	10 92 90 00 	sts	0x0090, r1	; 0x800090 <__TEXT_REGION_LENGTH__+0x7e0090>
+	UBRR0L = 3;		// 115200 bps
+ 120:	83 e0       	ldi	r24, 0x03	; 3
+ 122:	89 b9       	out	0x09, r24	; 9
+int main(void)
+{
+    unsigned char text[] = 
+			"\r\nWelcom! edgeiLAB\r\n USART 0 Test Program.\r\r";
+	unsigned char echo[] = "ECHO >>";
+	unsigned char i = 0;
+ 124:	10 e0       	ldi	r17, 0x00	; 0
+	UCSR0A = 0x00;
+	UCSR0B = 0x18;		// Rx, Tx enable
+	UCSR0C = 0x06;		// 비동기 방식, No Parity bit, 1 Stop bit
+	UBRR0H = 0x00;
+	UBRR0L = 3;		// 115200 bps
+    while (text[i]!='\0')		//문자열 데이터가 '\0'인경우, 문자열의 끝 
+ 126:	02 c0       	rjmp	.+4      	; 0x12c <main+0x58>
+    {
+		putct(text[i++]);		//문자열 출력
+ 128:	1f 5f       	subi	r17, 0xFF	; 255
+ 12a:	c6 df       	rcall	.-116    	; 0xb8 <putct>
+	UCSR0A = 0x00;
+	UCSR0B = 0x18;		// Rx, Tx enable
+	UCSR0C = 0x06;		// 비동기 방식, No Parity bit, 1 Stop bit
+	UBRR0H = 0x00;
+	UBRR0L = 3;		// 115200 bps
+    while (text[i]!='\0')		//문자열 데이터가 '\0'인경우, 문자열의 끝 
+ 12c:	e1 e0       	ldi	r30, 0x01	; 1
+ 12e:	f0 e0       	ldi	r31, 0x00	; 0
+ 130:	ec 0f       	add	r30, r28
+ 132:	fd 1f       	adc	r31, r29
+ 134:	e1 0f       	add	r30, r17
+ 136:	f1 1d       	adc	r31, r1
+ 138:	80 81       	ld	r24, Z
+ 13a:	81 11       	cpse	r24, r1
+ 13c:	f5 cf       	rjmp	.-22     	; 0x128 <main+0x54>
+ 13e:	10 e0       	ldi	r17, 0x00	; 0
+ 140:	02 c0       	rjmp	.+4      	; 0x146 <main+0x72>
+		putct(text[i++]);		//문자열 출력
+    }
+	i = 0;
+	while(echo[i]!='\0')		//위와 동일
+	{
+		putct(echo[i++]);
+ 142:	1f 5f       	subi	r17, 0xFF	; 255
+ 144:	b9 df       	rcall	.-142    	; 0xb8 <putct>
+    while (text[i]!='\0')		//문자열 데이터가 '\0'인경우, 문자열의 끝 
+    {
+		putct(text[i++]);		//문자열 출력
+    }
+	i = 0;
+	while(echo[i]!='\0')		//위와 동일
+ 146:	ee e2       	ldi	r30, 0x2E	; 46
+ 148:	f0 e0       	ldi	r31, 0x00	; 0
+ 14a:	ec 0f       	add	r30, r28
+ 14c:	fd 1f       	adc	r31, r29
+ 14e:	e1 0f       	add	r30, r17
+ 150:	f1 1d       	adc	r31, r1
+ 152:	80 81       	ld	r24, Z
+ 154:	81 11       	cpse	r24, r1
+	{
+		putct(echo[i++]);
+	}
+	while(1)
+	{
+		putct(getch());
+ 156:	f5 cf       	rjmp	.-22     	; 0x142 <main+0x6e>
+ 158:	b6 df       	rcall	.-148    	; 0xc6 <getch>
+ 15a:	ae df       	rcall	.-164    	; 0xb8 <putct>
+ 15c:	fd cf       	rjmp	.-6      	; 0x158 <main+0x84>
+
+0000015e <_exit>:
+ 15e:	f8 94       	cli
+
+00000160 <__stop_program>:
+ 160:	ff cf       	rjmp	.-2      	; 0x160 <__stop_program>
